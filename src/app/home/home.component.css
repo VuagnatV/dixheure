@@ -1,0 +1,23 @@
+/* home.component.css */
+.home-container {
+    text-align: center;
+    color: white;
+    background-color: black;
+    padding: 20px;
+}
+
+.home-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+}
+
+.home-header p {
+    font-size: 1.2em;
+}
+
+.featured-playlists h2 {
+    font-size: 2em;
+    margin-top: 1em;
+}
+
+/* Ajoutez plus de styles ici selon vos besoins */
