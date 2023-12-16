@@ -4,12 +4,22 @@ import { HomeComponent } from './home/home.component';
 import { AuthComponent } from './auth/auth.component';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { BanniereComponent } from './banniere/banniere.component';
+import { AlbumCardComponent } from './album-card/album-card.component';
+import { PisteAudioComponent } from './piste-audio/piste-audio.component';
+import { RegeatonComponent } from './regeaton/regeaton.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AuthComponent
+    AuthComponent,
+    NavbarComponent,
+    BanniereComponent,
+    AlbumCardComponent,
+    PisteAudioComponent,
+    RegeatonComponent
   ],
   imports: [
     BrowserModule,

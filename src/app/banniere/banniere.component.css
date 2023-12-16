@@ -1,0 +1,81 @@
+.banner {
+    background-image: url('/assets/images/couverture_dixheure.png');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    height: 700px;
+    width: auto;
+}
+
+.banner:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 200px; 
+    background: linear-gradient(to top, rgba(0,0,0,1), rgba(0,0,0,0));
+
+}
+.banner h1, .banner p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; 
+}
+
+@media (max-width: 600px) {
+    .banner {
+        height: 200px;
+    }
+    .banner h1 {
+        font-size: 20px;
+    }
+    .banner p {
+        font-size: 14px;
+    }
+}
+.banner {
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.logo-container .logo {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px;
+    border-radius: 50%;
+  }
+  
+  .login-button {
+    padding: 10px 20px;
+    height: 50px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e91616; 
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    display: flex;
+    align-items: center;
+  }
+  
+  .login-button:hover {
+    background-color: #830d0d;
+  }
+  
+  .titre{
+    display: flex;
+    justify-content: center;
+  }

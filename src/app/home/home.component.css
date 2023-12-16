@@ -4,6 +4,8 @@
     color: white;
     background-color: black;
     padding: 20px;
+    height: 100vh;
+    width: 100vw;
 }
 
 .home-header h1 {

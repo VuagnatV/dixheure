@@ -1,13 +1,21 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-auth',
-  standalone: true,
-  imports: [CommonModule],
   templateUrl: './auth.component.html',
-  styleUrl: './auth.component.css'
+  styleUrls: ['./auth.component.css']
 })
 export class AuthComponent {
+  constructor(private router: Router) {}
 
+ 
+  authenticate(email: string, password: string) {
+ 
+    if(email === 'user' && password === 'password') {
+      this.router.navigate(['/home']); // Redirection vers 'home' si authentifié
+    } else {
+      alert('Authentification échouée');
+    }
+  }
 }

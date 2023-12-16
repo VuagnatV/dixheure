@@ -1,0 +1,46 @@
+.dixheure-navbar {
+    background-color: #e91616; /* Couleur verte typique de Spotify */
+    color: white;
+    display: flex;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    align-items: center;
+    height: 50px;
+    background: linear-gradient(to top, #df2121, rgba(243, 19, 19, 0));
+   
+    flex-direction: row;
+    padding-left: auto;
+    padding-right: auto;
+    justify-content: space-around;
+  }
+
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+    font-size: 1.5em;
+    padding-top: 65px;
+  }
+  
+  .nav-links li {
+    margin: 0 40px;
+    display: flex;
+    padding-left: auto;
+    padding-right: auto;
+    align-items: baseline;
+    
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color: #000000; /* Légèrement plus clair que le fond pour un effet au survol */
+  }
+
+  

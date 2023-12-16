@@ -1,0 +1,35 @@
+
+.album-card {
+    width: 200px;
+    height: 200px; /* Largeur de la carte */
+    margin: 10px; /* Espace autour de la carte */
+    background-color: #fff; /* Couleur de fond */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombre portée */
+    border-radius: 10px; /* Bords arrondis */
+    overflow: hidden; /* Masquer le débordement */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transition pour l'effet de survol */
+    display: flex;
+    justify-content: space-between;
+}
+
+.album-card:hover {
+    transform: scale(1.05); /* Agrandir légèrement au survol */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombre portée plus prononcée au survol */
+}
+
+.album-card img {
+    width: 100%; /* Image couvre toute la largeur de la carte */
+    height: auto; /* Hauteur automatique pour garder le ratio */
+    border-bottom: 1px solid #eee; /* Ligne séparatrice */
+}
+
+.album-card h3 {
+    font-size: 1em; /* Taille de police pour le titre */
+    margin: 10px; /* Marge intérieure */
+}
+
+.album-card p {
+    font-size: 0.8em; /* Taille de police plus petite pour l'artiste */
+    color: #666; /* Couleur de police plus claire */
+    margin: 0 10px 10px; /* Marge intérieure */
+}
