@@ -9,6 +9,8 @@ import { BanniereComponent } from './banniere/banniere.component';
 import { AlbumCardComponent } from './album-card/album-card.component';
 import { PisteAudioComponent } from './piste-audio/piste-audio.component';
 import { RegeatonComponent } from './regeaton/regeaton.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [
@@ -23,7 +25,10 @@ import { RegeatonComponent } from './regeaton/regeaton.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

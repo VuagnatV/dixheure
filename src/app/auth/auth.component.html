@@ -1,16 +1,41 @@
 <!-- auth.component.html -->
 <div class="auth-container">
-    <h2>Connexion</h2>
-    <form>
-      <div class="form-group">
-        <label for="email">Email:</label>
-        <input type="email" #email name="email" class="form-control">
-      </div>
-      <div class="form-group">
-        <label for="password">Mot de passe:</label>
-        <input type="password" #password name="password" class="form-control">
-      </div>
-      <button type="submit" class="btn">Se connecter</button>
-    </form>
-  </div>
-  
+  <h2>{{login ? 'Connexion' : 'Créer votre compte'}}</h2>
+
+  <form [formGroup]="loginForm" (ngSubmit)="authenticate()" *ngIf="login">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" #email name="email" class="form-control" formControlName="email">
+    </div>
+    <div class="form-group">
+      <label for="password">Mot de passe:</label>
+      <input type="password" #password name="password" class="form-control" formControlName="password">
+    </div>
+    <button type="submit" class="btn">Se connecter</button>
+    <p *ngIf="submittedLogin">
+      Mot de passe ou email invalide
+    </p>
+    <a class="links" (click)="switch()">Créer un compte.</a>
+  </form>
+
+  <form [formGroup]="registerForm" (ngSubmit)="register()" *ngIf="!login">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" #email name="email" class="form-control" formControlName="email">
+    </div>
+    <div class="form-group">
+      <label for="password">Mot de passe:</label>
+      <input type="password" #password name="password" class="form-control" formControlName="password">
+    </div>
+    <div class="form-group">
+      <label for="password">Confirmation du passe:</label>
+      <input type="password" #password name="confirmPassword" class="form-control" formControlName="confirmPassword">
+    </div>
+    <button type="submit" class="btn">S'enregistrer</button>
+    <p *ngIf="submittedRegister && registerForm.invalid">
+      {{ this.formError() }}
+    </p>
+    <a class="links" (click)="switch()">Se connecter</a>
+  </form>
+
+</div>
