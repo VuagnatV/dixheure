@@ -26,6 +26,10 @@
 
 }
 
+.albumCard {
+    padding: 25px;
+}
+
 .degrade {
     padding-bottom: 50px;
     padding-top: 20px;

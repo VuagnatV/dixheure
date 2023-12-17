@@ -6,11 +6,11 @@ import { Album } from './album.model';
 })
 export class AlbumService {
   private albums: Album[] = [
-   {
-    titre: "jason",
-    artiste: "string",
-    image: "string"
-   },
+    {
+      titre: "jason",
+      artiste: "string",
+      image: "string"
+    },
   ];
 
   getAlbums(): Album[] {

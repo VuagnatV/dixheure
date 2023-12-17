@@ -1,10 +1,5 @@
-
-  <div class="album-card">
-    <div *ngFor="let album of albums" class="album-card">
-      <img [src]="album.image" alt="{{album.titre}}">
-      <h3>{{album.titre}}</h3>
-      <p>{{album.artiste}}</p>
-
-    </div>
-  </div>
-
+<div class="album-card">
+  <img [src]="image">
+  <h3>{{titre}}</h3>
+  <p>{{artiste}}</p>
+</div>
