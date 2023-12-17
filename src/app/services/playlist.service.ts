@@ -10,7 +10,7 @@ export class PlaylistService {
 
   constructor(private http: HttpClient) { }
 
-  dbUrl: string = 'http://localhost:3000/playlist';
+  dbUrl: string = 'http://localhost:3000/playlists';
 
 
   getPlaylists(user: User) {

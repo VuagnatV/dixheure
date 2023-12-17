@@ -13,7 +13,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MyPlaylistsComponent } from './my-playlists/my-playlists.component';
 import { PlaylistPageComponent } from './playlist-page/playlist-page.component';
-import { SongComponent } from './song/song.component'
+import { SongComponent } from './song/song.component';
+import { SearchSongsPipe } from './filter-by-artist.pipe';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,8 @@ import { SongComponent } from './song/song.component'
     RegeatonComponent,
     MyPlaylistsComponent,
     PlaylistPageComponent,
-    SongComponent
+    SongComponent,
+    SearchSongsPipe
   ],
   imports: [
     BrowserModule,

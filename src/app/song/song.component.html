@@ -17,4 +17,12 @@
             <button (click)="deleteSong(song.id)">Supprimer</button>
         </li>
     </ul>
-</div>
+    <div class="search-container">
+        <input type="text" [(ngModel)]="searchTerm" placeholder="Rechercher des chansons" class="search-input">
+
+        <ul class="song-list">
+            <li *ngFor="let song of songs | searchSongs:searchTerm">
+                {{ song.title }} - {{ song.artist }}
+            </li>
+        </ul>
+    </div>

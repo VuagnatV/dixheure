@@ -156,7 +156,7 @@
       "id": 31
     }
   ],
-  "playlist": [
+  "playlists": [
     {
       "id": 1,
       "userId": 21,
@@ -181,6 +181,11 @@
       "name": "gdfgdfgdfgggggggg",
       "userId": 21,
       "id": 13
+    },
+    {
+      "name": "sdfsdfsd",
+      "userId": 21,
+      "id": 14
     }
   ],
   "songs": [
@@ -190,19 +195,31 @@
       "artist": "Artist 1"
     },
     {
-      "id": 2,
-      "title": "Song 2",
-      "artist": "Artist 2"
-    },
-    {
       "id": 3,
       "title": "Song 3",
       "artist": "Artist 3"
     },
     {
-      "id": 4,
-      "title": "Song 4",
-      "artist": "Artist 4"
+      "title": "fsdfsdfsdf",
+      "artist": "fsddfsdf",
+      "id": 5
+    }
+  ],
+  "playlistSongs": [
+    {
+      "songId": 1,
+      "playlistId": 1,
+      "id": 1
+    },
+    {
+      "songId": 3,
+      "playlistId": 14,
+      "id": 2
+    },
+    {
+      "songId": 3,
+      "playlistId": 1,
+      "id": 5
     }
   ]
 }
