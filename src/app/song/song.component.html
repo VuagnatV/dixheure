@@ -1,0 +1,20 @@
+<header class="home-header">
+    <app-navbar></app-navbar>
+</header>
+<div class="degrade"></div>
+<div class="song-list-container">
+    <h2>Liste des Chansons</h2>
+
+    <div class="add-song-form">
+        <input type="text" #songTitle [formControl]="artist" placeholder="Titre de la chanson">
+        <input type="text" #songArtist [formControl]="title" placeholder="Artiste">
+        <button (click)="addSong()">Ajouter une Chanson</button>
+    </div>
+
+    <ul class="songs">
+        <li *ngFor="let song of songs">
+            {{ song.title }} - {{ song.artist }}
+            <button (click)="deleteSong(song.id)">Supprimer</button>
+        </li>
+    </ul>
+</div>

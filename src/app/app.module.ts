@@ -11,7 +11,9 @@ import { PisteAudioComponent } from './piste-audio/piste-audio.component';
 import { RegeatonComponent } from './regeaton/regeaton.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
-import { MyPlaylistsComponent } from './my-playlists/my-playlists.component'
+import { MyPlaylistsComponent } from './my-playlists/my-playlists.component';
+import { PlaylistPageComponent } from './playlist-page/playlist-page.component';
+import { SongComponent } from './song/song.component'
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { MyPlaylistsComponent } from './my-playlists/my-playlists.component'
     AlbumCardComponent,
     PisteAudioComponent,
     RegeatonComponent,
-    MyPlaylistsComponent
+    MyPlaylistsComponent,
+    PlaylistPageComponent,
+    SongComponent
   ],
   imports: [
     BrowserModule,
