@@ -58,6 +58,7 @@ export class AuthComponent implements OnInit {
           this.submittedLogin = true
         } else {
           if (data[0].password == password) {
+            this.authService.user = data[0]
             this.router.navigate(['/home'])
           }
         }

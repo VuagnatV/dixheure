@@ -1,0 +1,21 @@
+<div>
+    <header class="home-header">
+        <app-navbar></app-navbar>
+    </header>
+    <div class="degrade"></div>
+    <div>
+        <h1>Créer une playlist</h1>
+        <label>name : </label>
+        <input type="text" [formControl]="name">
+        <button (click)="createPlaylist()"> Créer</button>
+    </div>
+
+    <h1>Mes playlists</h1>
+    <div class="playlistTab" *ngIf="playlists">
+        <div class="playlistCard" *ngFor="let playlist of playlists">
+            {{playlist.name}}
+            <button (click)="deletePlaylist(playlist.id)">Delete</button>
+        </div>
+    </div>
+
+</div>

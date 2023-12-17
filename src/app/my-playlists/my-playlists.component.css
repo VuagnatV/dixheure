@@ -1,0 +1,14 @@
+.playlistCard {
+    border: solid;
+    border-color: red;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    width: 200px
+}
+
+.playlistTab {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}

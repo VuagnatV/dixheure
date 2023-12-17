@@ -7,6 +7,8 @@ import { User } from '../models/user';
 })
 export class AuthService {
 
+  user?: User | null
+
   dbUrl: string = 'http://localhost:3000/user';
 
   loggedIn: boolean = false

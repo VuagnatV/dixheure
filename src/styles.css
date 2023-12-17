@@ -3,3 +3,10 @@
 body {
     margin: auto;
 }
+
+.degrade {
+    padding-bottom: 50px;
+    padding-top: 20px;
+    height: 10px;
+    background: linear-gradient(to bottom, #e91616, rgba(0, 0, 0, 0));
+}
