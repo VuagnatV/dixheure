@@ -3,23 +3,47 @@
     text-align: center;
     color: white;
     background-color: black;
-    padding: 20px;
-    height: 100vh;
-    width: 100vw;
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .home-header h1 {
     font-size: 2.5em;
-    margin-bottom: 0.5em;
+
 }
 
 .home-header p {
     font-size: 1.2em;
 }
 
-.featured-playlists h2 {
+.titre-du-moment {
+    padding-bottom: 50px;
+    padding-top: 20px;
     font-size: 2em;
-    margin-top: 1em;
+    left: 0;
+
+
 }
 
-/* Ajoutez plus de styles ici selon vos besoins */
+.degrade {
+    padding-bottom: 50px;
+    padding-top: 20px;
+    height: 10px;
+    background: linear-gradient(to bottom, #e91616, rgba(0, 0, 0, 0));
+}
+
+.container-card {
+    display: flex;
+    flex-direction: row;
+    padding-left: auto;
+    padding-right: auto;
+    align-items: center;
+    justify-content: space-around;
+    grid-row: 3;
+}
+
+.reggaeton-titre {
+    font-size: 2em;
+    left: 0;
+}

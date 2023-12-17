@@ -21,21 +21,4 @@ export class AuthService {
     return this.http.get<User[]>(this.dbUrl + '?email=' + user.email)
   }
 
-  /*authenticate(user: User) {
-    let password
-    this.getUser(user).subscribe({
-      next: (data) => {
-        console.log(data)
-        if (data.length == 0) {
-          password = null
-        } else {
-          password = data[0].password
-        }
-      }, error: (e) => {
-        password = null
-      }
-    })
-
-  }*/
-
 }

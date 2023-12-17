@@ -53,6 +53,7 @@ export class AuthComponent implements OnInit {
     const { email, password } = this.loginForm.value;
     this.authService.getUser({ email, password }).subscribe({
       next: (data) => {
+        console.log(data)
         if (data.length == 0) {
           this.submittedLogin = true
         } else {

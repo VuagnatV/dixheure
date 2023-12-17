@@ -1,12 +1,22 @@
 <!-- home.component.html -->
 <div class="home-container">
     <header class="home-header">
-        <h1>Bienvenue sur Dixheure!</h1>
-        <p>Explorez de nouvelles musiques, podcasts, et playlists.</p>
+
+
+        <app-navbar></app-navbar>
     </header>
-    <section class="featured-playlists">
-        <h2>Playlists en vedette</h2>
-        <!-- Ici, vous pouvez ajouter des éléments de liste ou des images pour représenter les playlists -->
-    </section>
-    <!-- Ajoutez d'autres sections selon vos besoins -->
+    <div class="degrade"></div>
+    <div class="titre-du-moment">
+        Les titres les plus écoutés
+    </div>
+    <div class="container-card">
+        <app-album-card></app-album-card>
+        <app-album-card></app-album-card>
+        <app-album-card></app-album-card>
+        <app-album-card></app-album-card>
+        <app-album-card></app-album-card>
+    </div>
+
+
+
 </div>
